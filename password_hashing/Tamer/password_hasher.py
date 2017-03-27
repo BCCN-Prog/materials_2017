@@ -1,4 +1,4 @@
 from getpass import getpass
 
-username = input('Enter your username: ')
-password = getpass('Enter your password: ')
+username = raw_input("Enter your username: ")
+password = getpass("Enter your password: ")
