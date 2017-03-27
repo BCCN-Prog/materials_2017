@@ -1,2 +1,6 @@
+import getpass
+
 username = input('Enter your username: ')
-password = input('Enter your password: ')
+password = getpass.getpass(prompt='Enter your password: ', stream=None)
+
+
