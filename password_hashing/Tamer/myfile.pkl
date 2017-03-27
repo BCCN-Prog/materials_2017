@@ -1,0 +1,6 @@
+(dp0
+S'asd'
+p1
+S'asd'
+p2
+s.
