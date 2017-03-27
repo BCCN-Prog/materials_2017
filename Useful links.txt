@@ -4,6 +4,8 @@ https://gist.githubusercontent.com/neilgee/9442209/raw/git.css
 
 https://git-scm.com/book/en/v2/
 
+https://www.udacity.com/course/how-to-use-git-and-github--ud775 // Set Up git environment 
+
 
 https://docs.scipy.org/doc/numpy/index.html
 
@@ -29,3 +31,5 @@ https://wiki.tiker.net/PyOpenCL/Installation/Mac
 https://pypi.python.org/pypi/numexpr
 
 https://docs.python.org/3/library/functools.html
+
+
