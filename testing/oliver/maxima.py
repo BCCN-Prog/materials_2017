@@ -1,3 +1,4 @@
+import pdb
 def find_maxima(x):
     """Find local maxima of x.
 
@@ -17,7 +18,7 @@ def find_maxima(x):
         message = 'Input argument must be a list, got %d instead' % type(x)
         raise TypeError(message)
 
-    idx = []
+    idx=[]
     for i in range(len(x)):
         if i==0 and x[i] > x[i+1]:
             idx.append(i)
@@ -25,8 +26,9 @@ def find_maxima(x):
         elif i==len(x)-1 and x[i] > x[i-1]:
             idx.append(i)
 
-        elif ((1 < i < len(x)-1) and (x[i-1] < x[i]) and (x[i+1] < x[i])):
+        elif i<len(x)-1 and  (x[i-1] <= x[i]) and (x[i+1] <= x[i]):
             idx.append(i)
+
     return idx
 
     # NOTE for the curious: the code above could be written using
