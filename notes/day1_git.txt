@@ -11,3 +11,7 @@ git commit
 
 git pull
 git push
+
+
+# be careful, this restores the server version of the file
+git checkout -- <filename>
