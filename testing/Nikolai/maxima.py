@@ -20,11 +20,7 @@ def find_maxima(x):
     idx = []
     for i in range(len(x)):
         # `i` is a local maximum if the signal decreases before and after it
-        if i == 0 and x[i+1] <= x[i]:
-            idx.append(i)
-        if i == len(x)-1 and x[i-1] <= x[i]:
-            idx.append(i)
-        elif x[i-1] <= x[i] and x[i+1] <= x[i]:
+        if x[i-1] <= x[i] and x[i+1] <= x[i]:
             idx.append(i)
     return idx
 
