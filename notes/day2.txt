@@ -1,0 +1,7 @@
+# Day 2 - Testing, Debugging and Profiling
+
+nosetests
+nosetests -v
+
+filename:  *test*
+function name: *test*
