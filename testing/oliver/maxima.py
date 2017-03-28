@@ -19,6 +19,7 @@ def find_maxima(x):
         raise TypeError(message)
 
     idx=[]
+    import pdb;pdb.set_trace()
     for i in range(len(x)):
         if i==0 and x[i] > x[i+1]:
             idx.append(i)
@@ -35,3 +36,5 @@ def find_maxima(x):
     # list comprehension as
     # return [i for i in range(len(x)) if x[i-1]<x[i] and x[i+1]<x[i]]
     # not that this would solve the bugs ;-)
+
+print(find_maxima([1,2,2,3,1]))
