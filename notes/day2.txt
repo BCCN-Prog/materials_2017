@@ -19,3 +19,12 @@ s(tep) 	Execute the next statement (goes down in new functions)
 bt 	Print the call stack
 a 	Print the local variables
 !command 	Execute the given Python command (by opposition to pdb commands)
+
+
+# Profiling (code courtesy of Andrej Warkentin)
+So you should be able to just run the main script which is Main_TestGIF_py3.py (maybe you have to add a 'sys.path.append('../')' at the beginning of the script as they do here: https://github.com/pozzorin/GIFFittingToolbox/blob/master/src/examples/Main_Test_GIF.py).
+
+You'll also need the data. You can get it from here: https://wiki.epfl.ch/giftoolbox. If you place the folder that I attached at the same level as the 'Code' folder in the downloaded toolbox the relative paths are correct.
+
+If you also want to use the cython version, there's a compiled file for python 3.4 but if you have a different python version you need to run 'python setup.py build_ext --inplace' in the folder.
+Note: we're using Python3.6 so this will need to be done!
