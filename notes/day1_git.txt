@@ -1,0 +1,12 @@
+# Day 1 - Introduction to Git
+
+git init # starting a new project: initialise a repository in a directory
+git clone http://.... # joining an existing project
+
+git status
+
+git add <file>
+git commit
+
+git pull
+git push
