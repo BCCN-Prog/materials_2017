@@ -1,3 +1,6 @@
+import numpy as np
+
+
 def find_maxima(x):
     """Find local maxima of x.
 
@@ -19,9 +22,12 @@ def find_maxima(x):
 
     idx = []
     for i in range(len(x)):
-        import pdb; pdb.set_trace()
         # `i` is a local maximum if the signal decreases before and after it
-        if x[i-1] < x[i] and x[i+1] < x[i]:
+        if i==0 and x[i]>x[i+1]:
+            idx.append(i)
+        elif i==(len(x)-1) and x[i]>x[i-1]:
+            idx.append(i)
+        elif i<(len(x)-1) and  x[i]>=x[i+1] and x[i]>=x[i-1]:
             idx.append(i)
     return idx
 
@@ -29,6 +35,3 @@ def find_maxima(x):
     # list comprehension as
     # return [i for i in range(len(x)) if x[i-1]<x[i] and x[i+1]<x[i]]
     # not that this would solve the bugs ;-)
-
-ans = find_maxima([1,2,3,4,3])
-print(ans)
