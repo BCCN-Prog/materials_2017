@@ -1,0 +1,38 @@
+# Day 2 - Testing, Debugging and Profiling
+
+# Testing
+nosetests
+nosetests -v
+
+filename:  *test*
+function name: *test*
+
+Actually, we've found that nosetests (in our currently installed version) only cares about the function name containing the text 'test'. It will check every file in your subdirectories for functions containing such text and run them.
+
+
+# Debugging
+import pdb; pdb.set_trace()
+
+# debugger commands
+l(list) 	Lists the code at the current position
+u(p) 	Walk up the call stack
+d(own) 	Walk down the call stack
+n(ext) 	Execute the next line (does not go down in new functions)
+s(tep) 	Execute the next statement (goes down in new functions)
+bt 	Print the call stack
+a 	Print the local variables
+!command 	Execute the given Python command (by opposition to pdb commands)
+
+
+# Profiling
+simple example: heavy_calc.py (run.sh)
+heavier example: profiling_inner_rk.py
+fancy example: fitting_toolbox (code courtesy of Andrej Warkentin)
+
+Notes on the fancy example:
+So you should be able to just run the main script which is Main_TestGIF_py3.py (maybe you have to add a 'sys.path.append('../')' at the beginning of the script as they do here: https://github.com/pozzorin/GIFFittingToolbox/blob/master/src/examples/Main_Test_GIF.py).
+
+You'll also need the data. You can get it from here: https://wiki.epfl.ch/giftoolbox. If you place the folder that I attached at the same level as the 'Code' folder in the downloaded toolbox the relative paths are correct.
+
+If you also want to use the cython version, there's a compiled file for python 3.4 but if you have a different python version you need to run 'python setup.py build_ext --inplace' in the folder.
+Note: we're using Python3.6 so this will need to be done!
