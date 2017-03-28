@@ -30,4 +30,5 @@ def find_maxima(x):
     # return [i for i in range(len(x)) if x[i-1]<x[i] and x[i+1]<x[i]]
     # not that this would solve the bugs ;-)
 
-find_maxima([1,2,3,4,3])
+ans = find_maxima([1,2,3,4,3])
+print(ans)
