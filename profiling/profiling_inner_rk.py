@@ -160,3 +160,8 @@ def make_state():
         state['sub'] = {pn: np.array([0, n]) for pn, n in state['n'].items()}
         state['spn'] = {pn: [pn] for pn, n in state['n'].items()}
     return state
+
+
+st = make_state()
+ans = inner_rk(10., st, 10., 0.1, 2)
+print(ans)
