@@ -28,8 +28,12 @@ def find_maxima(x):
             #idx.append(i)
             localmax.append(x[i])
             localmax.sort()
+            if len(localmax) == 1:
+                m= x.index(localmax[localmax])
+            else:
+                m=  x.index(localmax[len(localmax)-1])
 
-    return x.index(localmax[len(localmax)-1])
+    return m
     #return idx
 
     # NOTE for the curious: the code above could be written using
