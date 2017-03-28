@@ -1,7 +1,21 @@
 # Day 2 - Testing, Debugging and Profiling
 
+# Testing
 nosetests
 nosetests -v
 
 filename:  *test*
 function name: *test*
+
+# Debugging
+import pdb; pdb.set_trace()
+
+# debugger commands
+l(list) 	Lists the code at the current position
+u(p) 	Walk up the call stack
+d(own) 	Walk down the call stack
+n(ext) 	Execute the next line (does not go down in new functions)
+s(tep) 	Execute the next statement (goes down in new functions)
+bt 	Print the call stack
+a 	Print the local variables
+!command 	Execute the given Python command (by opposition to pdb commands)
