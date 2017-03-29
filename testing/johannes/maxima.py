@@ -18,15 +18,18 @@ def find_maxima(x):
         raise TypeError(message)
 
     idx = []
-    for i in range(len(x)):
+    if x[0] > x[1]:  # first point
+        idx.append(0)
+    for i in range(1, len(x)-1):  # middle points
         # `i` is a local maximum if the signal decreases before and after it
-        # this maximum is not strict
-        if i == 0 and x[i+1] <= x[i]:
+        if x[i-1] < x[i] and x[i+1] < x[i]:
             idx.append(i)
-        if i == len(x)-1 and x[i-1] <= x[i]:
+        elif x[i-1] < x[i] and x[i+1] == x[i] and x[i+2] < x[i]:  # for a plateau with 2 points, add the first one as maximum
             idx.append(i)
-        elif x[i-1] <= x[i] and x[i+1] <= x[i]:
-            idx.append(i)
+        # TODO: Recognize maxima in plateaus with more than 2 points.
+
+    if x[len(x)-1] > x[len(x)-2]:  # last point
+        idx.append(len(x)-1)
     return idx
 
     # NOTE for the curious: the code above could be written using

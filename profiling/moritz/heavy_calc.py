@@ -12,7 +12,6 @@ def g(y):
         z.append(idx/2)
     return z
 
-pow = 7
+pow = 3
 
 a = g(pow)
-print(a)
