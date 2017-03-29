@@ -1,9 +1,41 @@
-# @deprecated
-# # stuff that is deprecated
+def deprecated(h):
+    print("Who hates deprecation?")
+    def inside_dep():
+        h()
+        print("Dee Bee?")
+    return inside_dep
 
-# @memorize
-# def fibonacci():
-#     # do it
+def deprecated2(h):
+    print("Who hates deprecation?")
+    def inside_dep():
+        h()
+        print("Nikolai!")
+    return inside_dep
+
+
+@deprecated
+# stuff that is deprecated
+def hola():
+    print ("...come on take one guess..")
+hola()
+     
+@deprecated2
+def ok():
+    print ("...come on take a second guess..")
+
+ok()
+'''
+@memorize
+def fibonacci():
+    # do it
+    
+    while True:
+        if i==0:
+            x[i]=0
+        elif i==1:
+            x[i]=0
+        else:
+            x[i]=x[i-1]+x[i-2]
 
 def decorator_function_with_arguments(arg1, arg2, arg3):
     print('Before wrap()')
@@ -43,3 +75,5 @@ sayHello("say", "hello", "argument", "list")
 print("after first sayHello() call")
 sayHello("a", "different", "set of", "arguments")
 print("after second sayHello() call")
+'''
+
