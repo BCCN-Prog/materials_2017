@@ -15,4 +15,3 @@ def g(y):
 pow = 7
 
 a = g(pow)
-print(a)

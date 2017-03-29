@@ -1,1 +1,1 @@
-python -m cProfile -o program.prof heavy_calc.py
+python -m cProfile -o heavy_calc_analysis.prof heavy_calc.py
