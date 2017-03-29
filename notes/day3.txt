@@ -1,0 +1,12 @@
+# Day 3 - Advanced topics
+
+# Iterators, Generators, Generator expressions
+
+# Decorators
+deprecated
+memorize (fibonacci caching)
+
+# Parallelisation
+pyopencl
+
+# TensorFlow
