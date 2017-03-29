@@ -1,43 +1,41 @@
-def deprecated(blank):
-    print('before wrap()')
-    print('DeprecationWarning 1: this runs when we define the function')
-    outside = 1
-    def wrap(func):
-        func.inside_wrap = 1
-        print('  inside wrap()', outside)
-        print('DeprecationWarning 2: how many function declarations does this run on?')
-        def wrapped_func(*args):
-            if func.inside_wrap < 2:
-                print('DeprecationWarning 3: how many times?')
-            print(func.inside_wrap)
-            func.inside_wrap += 1
-            print(func.inside_wrap)
-            print('    inside wrapped_func()', outside)
-            func(*args)
-            print('    ending wrapped_func()')
-        return wrapped_func
-    print('ending wrap()')
-    outside += 1
-    return wrap
+def deprecated(h):
+    print("Who hates deprecation?")
+    def inside_dep():
+        h()
+        print("Dee Bee?")
+    return inside_dep
 
-@deprecated('b')
-def deprecate_me(*args):
-    print('      inside deprecated function')
+def deprecated2(h):
+    print("Who hates deprecation?")
+    def inside_dep():
+        h()
+        print("Nikolai!")
+    return inside_dep
 
-@deprecated('b')
-def deprecate_dd(*args):
-    print('      another deprecated function')
 
-@deprecated('b')
-def deprecate_ee(*args):
-    print('      another deprecated function')
+@deprecated
+# stuff that is deprecated
+def hola():
+    print ("...come on take one guess..")
+hola()
+     
+@deprecated2
+def ok():
+    print ("...come on take a second guess..")
 
-# @deprecated
-# # stuff that is deprecated
-
-# @memorize
-# def fibonacci():
-#     # do it
+ok()
+'''
+@memorize
+def fibonacci():
+    # do it
+    
+    while True:
+        if i==0:
+            x[i]=0
+        elif i==1:
+            x[i]=0
+        else:
+            x[i]=x[i-1]+x[i-2]
 
 def decorator_function_with_arguments(arg1, arg2, arg3):
     print('Before wrap()')
@@ -77,3 +75,5 @@ sayHello("say", "hello", "argument", "list")
 print("after first sayHello() call")
 sayHello("a", "different", "set of", "arguments")
 print("after second sayHello() call")
+'''
+
