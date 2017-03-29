@@ -1,18 +1,19 @@
 def entry_exit(f):
+    print ("you see only this")
     def new_f():
         print("Entering", f.__name__)
         f()
         print("Exited", f.__name__)
-    # new_f.__name__ = f.__name__
+    new_f.__name__ = f.__name__
     return new_f
 
 @entry_exit
 def func1():
-    print("inside func1()")
+    print("   inside func1()")
 
 @entry_exit
 def func2():
-    print("inside func2()")
+    print("  inside func2()")
 
 func1()
 func2()
