@@ -1,0 +1,18 @@
+# Day 3 - Advanced topics
+
+# Iterators, Generators, Generator expressions
+
+# Decorators
+deprecated
+memorize (fibonacci caching)
+
+# Parallelisation
+pyopencl
+
+# Speed
+partial functions (in functools) - simplifies the calling of a generic function
+numexpr - slightly faster than numpy for solving numeric expressions
+IntelMKL via Anaconda - you can install in anaconda and it will give huge speedups. BUT do not install in Root Conda environment!
+
+
+# TensorFlow

@@ -1,3 +1,37 @@
+def deprecated(blank):
+    print('before wrap()')
+    print('DeprecationWarning 1: this runs when we define the function')
+    outside = 1
+    def wrap(func):
+        func.inside_wrap = 1
+        print('  inside wrap()', outside)
+        print('DeprecationWarning 2: how many function declarations does this run on?')
+        def wrapped_func(*args):
+            if func.inside_wrap < 2:
+                print('DeprecationWarning 3: how many times?')
+            print(func.inside_wrap)
+            func.inside_wrap += 1
+            print(func.inside_wrap)
+            print('    inside wrapped_func()', outside)
+            func(*args)
+            print('    ending wrapped_func()')
+        return wrapped_func
+    print('ending wrap()')
+    outside += 1
+    return wrap
+
+@deprecated('b')
+def deprecate_me(*args):
+    print('      inside deprecated function')
+
+@deprecated('b')
+def deprecate_dd(*args):
+    print('      another deprecated function')
+
+@deprecated('b')
+def deprecate_ee(*args):
+    print('      another deprecated function')
+
 # @deprecated
 # # stuff that is deprecated
 
