@@ -14,7 +14,7 @@ def decorator_function_with_arguments(arg1, arg2, arg3):
     #   an explicit name as 'f' (or 'g') in order to access
     #   it inside the function. This is also why we need
     #   the double wrapping.
-    def wrap(g):
+    def wrap(g): # see I can also call it g (or anything else!)
         # how many times does this print?
         print("Inside wrap()")
         def wrapped_f(*args):
