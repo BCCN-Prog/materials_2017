@@ -1,0 +1,3 @@
+[submodule "pyopencl/pyopencl"]
+	path = pyopencl/pyopencl
+	url = http://git.tiker.net/trees/pyopencl.git
