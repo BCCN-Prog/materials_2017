@@ -10,9 +10,9 @@ def func_david():
 def entry_exit(f):
     # this only gets run once
     print('once here')
-    def new_f():
+    def new_f(test):
         print("Entering", f.__name__)
-        f()
+        f(test)
         print("Exited", f.__name__)
     # this only gets run once
     print('running here just once')
@@ -20,7 +20,8 @@ def entry_exit(f):
     return new_f
 
 @entry_exit
-def func1():
+def func1(temp):
+    print(temp)
     print("    inside func1()")
 
 
