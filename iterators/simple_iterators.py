@@ -1,6 +1,7 @@
 
-x = iter([1,2,3,4,5])
+x = iter([22,23,'dd',4,5])
 y = x.__iter__()
+z = x
 
 print(x)
 print(y)
