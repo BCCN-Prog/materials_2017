@@ -3,6 +3,7 @@ def yrange(n):
     i = 0
     while i < n:
         yield i
+        # yield 22 + i
         i += 1
 
 y = yrange(3)
