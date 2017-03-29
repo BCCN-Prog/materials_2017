@@ -1,3 +1,6 @@
 [submodule "pyopencl/pyopencl"]
 	path = pyopencl/pyopencl
 	url = http://git.tiker.net/trees/pyopencl.git
+[submodule "profiling/fitting_toolbox/GIFFittingToolbox"]
+	path = profiling/fitting_toolbox/GIFFittingToolbox
+	url = https://github.com/pozzorin/GIFFittingToolbox
