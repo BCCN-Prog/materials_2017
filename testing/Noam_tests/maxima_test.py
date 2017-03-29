@@ -19,24 +19,20 @@ def find_maxima(x):
         message = 'Input argument must be a list, got %d instead' % type(x)
         raise TypeError(message)
 
-    localmax = []
+
+
     idx = []
     for i in range(len(x)):
         #pdb.set_trace()
         # `i` is a local maximum if the signal decreases before and after it
-        if x[i-1] < x[i] and x[i+1] < x[i]:
-            #idx.append(i)
-            localmax.append(x[i])
-            localmax.sort()
-            if len(localmax) == 1:
-                m= x.index(localmax[localmax])
-            else:
-                m=  x.index(localmax[len(localmax)-1])
+        if i == 0 and x[i]>x[i+1]:
+            idx.append(i)
+        elif i == (len(x)-1) and x[i-1] < x[i]:
+            idx.append(i)
+        elif x[i-1] < x[i] and x[i+1] < x[i]:
+            idx.append(i)
 
-    return m
-    #return idx
+    return idx
 
-    # NOTE for the curious: the code above could be written using
-    # list comprehension as
-    # return [i for i in range(len(x)) if x[i-1]<x[i] and x[i+1]<x[i]]
-    # not that this would solve the bugs ;-)
+x= [4,2,1,3,1,2]
+print (find_maxima(x))
