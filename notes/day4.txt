@@ -26,3 +26,12 @@ Write the bug fix
 Do not submit a Pull Request unless you are confident that your new code fits the project.
 
 http://matplotlib.org/devel/coding_guide.html#testing
+
+
+For compiling Matplotlib, you need:
+Freetype
+pkg-config
+Then uninstall matplotlib from your conda environment.
+Finally, run
+python setup.py install
+in the matplotlib folder.
