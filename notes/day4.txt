@@ -24,3 +24,5 @@ Write a test (before you write the bug fix; this way you'll know if it works)
 Write the bug fix
 
 Do not submit a Pull Request unless you are confident that your new code fits the project.
+
+http://matplotlib.org/devel/coding_guide.html#testing
