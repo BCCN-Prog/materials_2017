@@ -1,0 +1,26 @@
+# Day 4 - Fixing Numpy{/scipy/matplotlib}
+
+Work in groups (approx 3-6 per group)
+Browse the Numpy bug list which I will post
+Select a bug which you think that you can work on
+Clear it with me
+
+Fork (not clone) the Numpy repository to your own account on GitHub
+Clone your copy of Numpy to your computer
+
+Try to figure out what the Bug Issue really means
+What is the desired behaviour?
+Why is it not working?
+Is there a proposed solution?
+Does it really solve the problem?
+Is the proposed solution consistent with the wider Numpy project?!
+
+Check the standards of the project to which you are submitting. Sometimes they prefer a certain format of text in the commit.
+
+Create a new branch to work on your proposed bug fix
+>>>> git checkout -b new_branch_name
+
+Write a test (before you write the bug fix; this way you'll know if it works)
+Write the bug fix
+
+Do not submit a Pull Request unless you are confident that your new code fits the project.
