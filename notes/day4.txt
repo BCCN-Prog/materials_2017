@@ -24,3 +24,33 @@ Write a test (before you write the bug fix; this way you'll know if it works)
 Write the bug fix
 
 Do not submit a Pull Request unless you are confident that your new code fits the project.
+
+
+Numpy:
+https://docs.scipy.org/doc/numpy-1.10.0/dev/development_environment.html
+
+
+Matplotlib:
+http://matplotlib.org/devel/coding_guide.html#testing
+
+For compiling Matplotlib, you need:
+conda install freetype
+conda install pkg-config
+conda uninstall matplotlib
+
+Finally,
+python setup.py install
+in the matplotlib folder.
+
+
+
+Bugs tackled:
+Team 1, matplotlib #7956 -> PR #8407 #8404
+Team 2, numpy #626 -> nearly there
+Team 3, matplotlib #7364 -> getting there
+
+
+Other suggested bugs:
+Numpy: 625, 583, 584, 631, 637, 931, 1327, 1361, 1474, 4363, 8728
+Matplotlib: 8347, 7205
+Scipy: 7168
