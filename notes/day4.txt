@@ -25,8 +25,13 @@ Write the bug fix
 
 Do not submit a Pull Request unless you are confident that your new code fits the project.
 
-http://matplotlib.org/devel/coding_guide.html#testing
 
+Numpy:
+https://docs.scipy.org/doc/numpy-1.10.0/dev/development_environment.html
+
+
+Matplotlib:
+http://matplotlib.org/devel/coding_guide.html#testing
 
 For compiling Matplotlib, you need:
 Freetype
