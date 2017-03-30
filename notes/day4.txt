@@ -46,7 +46,7 @@ in the matplotlib folder.
 
 Bugs tackled:
 Team 1, matplotlib #7956 -> PR #8407 #8404
-Team 2, numpy #626 -> nearly there
+Team 2, numpy #626 -> PR #8872
 Team 3, matplotlib #7364 -> PR #8408
 
 
