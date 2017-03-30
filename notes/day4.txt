@@ -34,9 +34,10 @@ Matplotlib:
 http://matplotlib.org/devel/coding_guide.html#testing
 
 For compiling Matplotlib, you need:
-Freetype
-pkg-config
-Then uninstall matplotlib from your conda environment.
-Finally, run
+conda install freetype
+conda install pkg-config
+conda uninstall matplotlib
+
+Finally,
 python setup.py install
 in the matplotlib folder.
