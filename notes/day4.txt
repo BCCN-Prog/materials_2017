@@ -29,6 +29,10 @@ Do not submit a Pull Request unless you are confident that your new code fits th
 Numpy:
 https://docs.scipy.org/doc/numpy-1.10.0/dev/development_environment.html
 
+In main repository folder, run:
+python runtests.py -v -t subdirectory/test_filename.py:test_function_name
+to only run specific tests.
+
 
 Matplotlib:
 http://matplotlib.org/devel/coding_guide.html#testing
@@ -46,8 +50,8 @@ in the matplotlib folder.
 
 Bugs tackled:
 Team 1, matplotlib #7956 -> PR #8407 #8404
-Team 2, numpy #626 -> nearly there
-Team 3, matplotlib #7364 -> getting there
+Team 2, numpy #626 -> PR #8872
+Team 3, matplotlib #7364 -> PR #8408
 
 
 Other suggested bugs:
