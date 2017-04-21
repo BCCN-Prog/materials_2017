@@ -1,0 +1,14 @@
+//save the profiling data into a file
+python -m cProfile -0 "outputFileName.prof" "scriptName.py"
+
+//display time
+time python "scriptName.py"
+
+//more overhead
+time python -m cProfile "scriptName.py"
+
+//get stats from .prof file
+python -m pstats "scriptName.prof"
+
+//help command to get sorting
+help / sort / sort_argument
